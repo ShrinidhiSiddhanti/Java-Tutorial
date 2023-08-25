@@ -1,0 +1,99 @@
+1. Factorial Number
+
+class factorial{  
+public static void main(String args[]){  
+int i, fact=1;  
+int n=5;  
+for(i=1;i<=5;i++)  
+{  
+fact=fact*i;  
+}  
+System.out.println("Factorial of "+ n+ " is: "+fact);  
+}  
+}  
+
+
+2. Reverse String 
+
+public class FinalReverseWithoutUsingStringMethods {
+  
+     public static void main(String[] args) {
+          // TODO Auto-generated method stub
+          String str = "Automation";
+          StringBuilder str2 = new StringBuilder();
+          str2.append(str);
+          str2 = str2.reverse();     // used string builder to reverse
+         System.out.println(str2);
+          }
+  
+}
+
+3. Swap two numbers using the third variable.
+
+import java.util.Scanner;
+ 
+public class SwapTwoNumbers {
+ 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int x, y, temp;
+        System.out.println("Enter x and y");
+        Scanner in = new Scanner(System.in);
+        x = in.nextInt();
+        y = in.nextInt();
+        System.out.println("Before Swapping" + x + y);
+        temp = x;
+        x = y;
+        y = temp;
+        System.out.println("After Swapping" + x + y);
+         
+    }
+ 
+}
+
+
+4. find whether a string or number is palindrome or not.
+
+
+import java.util.Scanner;
+ 
+public class Palindrome {
+    public static void main (String[] args) {
+        String original, reverse = "";
+        Scanner in = new Scanner(System.in);
+        int length;
+        System.out.println("Enter the number or String");
+        original = in.nextLine();
+        length = original.length();
+        for (int i =length -1; i>;=0; i--) {
+            reverse = reverse + original.charAt(i);
+        }
+        System.out.println("reverse is:" +reverse);
+         
+        if(original.equals(reverse)) 
+            System.out.println("The number is palindrome");
+        else
+            System.out.println("The number is not a palindrome");
+         
+    }
+}
+
+5. Fibonacci series.
+
+import java.util.Scanner;
+ 
+public class Fibonacci {
+    public static void main(String[] args) {
+        int num, a = 0,b=0, c =1;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the number of times");
+        num = in.nextInt();
+        System.out.println("Fibonacci Series of the number is:");
+        for (int i=0; i<num; i++) {
+            a = b;
+            b = c;
+            c = a+b;
+            System.out.println(a + "");    //if you want to print on the same line, use print()
+        }       
+    }
+}
